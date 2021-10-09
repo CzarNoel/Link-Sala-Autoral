@@ -21,8 +21,8 @@
     color: rgb(183, 0, 255);
 }
 
-.linksalalogo {
-    height: 20px;
+.logoprimario {
+    height: 25px;
 }
 
 .navlist {
@@ -56,6 +56,7 @@
     .linksalalogo {
         height: 20px;
         margin-top: 15px;
+        margin-bottom: 10px;
     }
     .menu {
         display: block;
