@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+
+    <header class="header">
+
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#"><img class="linksalalogo" src="LOGOLINKSALA.png"></a>
+            </div>
+
+            <ul class="navlist" id="navlist">
+                <li class="nav-link">
+                    <a href="@">Home</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#">Sobre</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#">Contato</a>
+                </li>
+                <li class="nav-link">
+                    <a href="login.html">Login</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#">Cadastro</a>
+                </li>
+            </ul>
+
+            <div class="menu" id="toggleButton">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </div>
+        </nav>   
+
+        <div class="bemvindo">
+            <div class="quick_start"></div>    
+        </div>
+
+    <header>
+    </body>
+    <script>
+        const toggleButton = document.getElementById('toggleButton');
+        const naviList = document.getElementById('navlist');
+
+        toggleButton.addEventListener('click', () => {
+            naviList.classList.toggle('active');
+        })
+    </script>
+</html>
