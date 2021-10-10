@@ -1,12 +1,78 @@
 <!DOCTYPE html>
 <html>
-<head>
 
-</head>
-<body>
-    <form>
-        <input type="text" placeholder="RA"> 
-        <button type="submit">Fazer Login</button>
-    </form>
+    <head>
+    <meta charset="-3">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap">        
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto Sans">
+    <link rel="stylesheet" href="loginstylesheet.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    
+    <body>
+
+        <header class="header">
+    
+            <nav class="navbar">
+                <div class="linksalalogo">
+                    <a href="index.html">
+                        <img class="logoprimario" src="LOGOLINKSALA.png">
+                    </a>
+                </div>
+    
+                <ul class="navlist" id="navlist">
+                    <li class="nav-link">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Sobre</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Contato</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="login.html">Login</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="cadastro.html">Cadastro</a>
+                    </li>
+                </ul>
+    
+                <div class="menu" id="toggleButton">
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                </div>
+            </nav>   
+    
+        <header>
+
+            
+
+        <div class="container">
+            <div class="block">
+                <form class="item">
+                    <input  id="item" type="text" placeholder="&nbsp;RA">
+                </form>
+                <form class="uc">
+                    <input id="item" type="text" placeholder="&nbsp;Senha">  
+                </form>
+                <form class="login">
+                    <button class="login" id="item" type="submit"><strong>&nbsp;Login&nbsp;</strong></strong></button>
+                </form>
+            </div>
+        </div>
+    
+
 </body>
+
+<script>
+    const toggleButton = document.getElementById('toggleButton');
+    const naviList = document.getElementById('navlist');
+
+    toggleButton.addEventListener('click', () => {
+        naviList.classList.toggle('active');
+    })
+</script>
+
 </html>
