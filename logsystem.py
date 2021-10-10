@@ -4,7 +4,7 @@ from flask import Flask, render_template, redirect, url_for
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route('/login.html')
 def index():
-    return "Hello"
+    return redirect(url_for('login.html'))
     
